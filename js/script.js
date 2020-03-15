@@ -3,9 +3,11 @@ Treehouse Techdegree:
 FSJS project 2 - List Filter and Pagination
 ******************************************/
 
+// Global Variables
 const itemsPerPage = 10;
 let currentFilteredStudentIndices = [];
 
+// initial calls
 appendAdditionalElements();
 search();
 
