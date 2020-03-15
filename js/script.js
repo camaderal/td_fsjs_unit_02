@@ -97,8 +97,9 @@ function goToPage(event){
 /**
  * Captures input from search input
  * Filters `currentFilteredStudentIndices` to include only students that match criteria.
- *   - input is a substring of student name
- *   - No input: all students are included
+ *   - Has input: will check whether input is a substring of student name
+ *     (whitespaces will be trimmed, unmatching upper/lower case wouldn't be considered)
+ *   - No input: all students are considered a match
  * Recalculates page links  
  * Then, shows page 0.
  */
